@@ -1,3 +1,5 @@
 pyscard
 rx
 requests
+requests_toolbelt
+urllib2

@@ -1,0 +1,5 @@
+url = 'http://api.walmoo.com/api/'
+login_hash = '6421U37U31YY44JRF22901S62T4H45S690OH8IG9'
+username = 'VBI_checkin'
+terminalsid = '3178'
+web_pass = 'q3563bae461243vbcvb4'
