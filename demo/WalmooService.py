@@ -19,7 +19,7 @@ def process_new_activity(uid):
     consumer_data = requests.post(url + 'web_output.php', params=get_consumer_req)
     consumer_json = json.loads(consumer_data.text)
     if consumer_json['status'] != 0:
-        log.info(f'no uid {uid}')
+        log.info('no uid {}'.format(uid))
         return
     consumer_id = consumer_json['data']['id']
     reg_transaction_req = [
