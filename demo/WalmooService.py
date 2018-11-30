@@ -37,7 +37,6 @@ def process_new_activity(uid):
         }))
     ]
     transaction_data = requests.post(url + 'web_input.php', params=reg_transaction_req)
-    print(transaction_data.text)
 
 
 if __name__ == '__main__':
