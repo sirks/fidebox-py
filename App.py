@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#! /usr/bin/env python3
 
 import logging
 import sys
@@ -21,6 +21,7 @@ token = FideService.getToken(fideLink, serialKey)
 
 Serial.open()
 
+
 def onCardRead(uid):
     logging.info(uid)
     WalmooService.processNewActivity(walmooLink, token, serialKey, uid, sendSerial)
@@ -29,7 +30,7 @@ def onCardRead(uid):
 def sendSerial(data):
     if data:
         logging.info(data)
-        Serial.write(data+';')
+        Serial.write(data + ';')
 
 
 cardListener = Observable.create(Nfc.pollingCards).publish()
